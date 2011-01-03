@@ -1,1 +1,30 @@
 h1. Linux Command-line setup for Juniper SSL VPN
+
+
+h2. Setup
+
+There are a few Ruby gems that will need to be installed to make the Rake tasks work:
+
+<pre>
+gem install rake
+gem install httpclient
+gem install selenium-webdriver
+gem install highline
+</pre>
+
+
+h2. Config File
+
+Some configuration needs to be loaded in order for the Rake tasks to work.
+You need to create a config.yml file in the same directory as your Rakefile.
+You can also run the Rake task 'makeconfig' if you want to be prompted for
+the answers and have the config file created for you.
+
+
+Here is an example config.yml file:
+<pre>
+--- 
+:ivehost: mypvnhost.example.org
+:title_page1: MySite VPN Portal
+:title_page2: Secure Access SSL VPN - Home
+</pre>
