@@ -6,10 +6,10 @@ h2. Setup
 There are a few Ruby gems that will need to be installed to make the Rake tasks work:
 
 <pre>
-gem install rake
-gem install httpclient
-gem install selenium-webdriver
-gem install highline
+  gem install rake
+  gem install httpclient
+  gem install selenium-webdriver
+  gem install highline
 </pre>
 
 
@@ -22,10 +22,9 @@ the answers and have the config file created for you.
 
 
 Here is an example config.yml file:
-pre.
+<pre>
   --- 
   :ivehost: mypvnhost.example.org
   :title_page1: MySite VPN Portal
   :title_page2: Secure Access SSL VPN - Home
-
-
+</pre>
