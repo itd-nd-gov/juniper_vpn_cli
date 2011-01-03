@@ -19,7 +19,7 @@ Some configuration needs to be loaded in order for the Rake tasks to work.  You 
 
 Here is an example config.yml file:
 <pre>
-%2D%2D%2D
+- - -
 :ivehost: mypvnhost.example.org
 :title_page1: MySite VPN Portal
 :title_page2: Secure Access SSL VPN - Home
