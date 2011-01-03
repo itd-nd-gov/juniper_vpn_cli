@@ -22,9 +22,9 @@ the answers and have the config file created for you.
 
 
 Here is an example config.yml file:
-<pre>
+<notextile>
 --- 
 :ivehost: mypvnhost.example.org
 :title_page1: MySite VPN Portal
 :title_page2: Secure Access SSL VPN - Home
-</pre>
+</notextile>
