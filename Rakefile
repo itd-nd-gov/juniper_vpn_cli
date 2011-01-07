@@ -64,9 +64,12 @@ task :vpn_connect do
 
   driver.quit
 
-  puts "This command will not return.  Hit Ctrl-C to end the VPN session."
-  puts "If you are prompted for a password just hit Enter."
-  system(%Q{./ncui -h #{conf[:ivehost]} -c '#{cookie_str}' -f ssl.crt})
+  p = fork {
+    exec(%Q{./ncui -h #{conf[:ivehost]} -c '#{cookie_str}' -p '' -f ssl.crt})
+  }
+
+  Process.detach(p)
+  Process.kill('HUP', p)
 end
 
 desc "Kill the Juniper VPN process"
