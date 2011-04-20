@@ -69,7 +69,7 @@ task :vpn_connect do
   }
 
   Process.detach(p)
-  Process.kill('HUP', p)
+  #Process.kill('HUP', p)
 end
 
 desc "Kill the Juniper VPN process"
