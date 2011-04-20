@@ -3,6 +3,11 @@ h1. Linux Command-line setup for Juniper SSL VPN
 
 h2. Setup
 
+System libraries that need to be installed:
+<pre>
+apt-get install gcc-multilib
+</pre>
+
 There are a few Ruby gems that will need to be installed to make the Rake tasks work:
 
 <pre>
