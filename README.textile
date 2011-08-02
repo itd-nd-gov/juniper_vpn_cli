@@ -53,6 +53,8 @@ h3. Connect
 rake vpn_connect
 </pre>
 
+*Note:* _You won't actually see an applet window like you do when you login with the browser on a 32bit client. There should however be a process running called "ncui"_
+
 
 h3. Disconnect
 
