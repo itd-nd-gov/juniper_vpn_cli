@@ -17,6 +17,19 @@ gem install selenium-webdriver
 gem install highline
 </pre>
 
+h3. Steps
+
+# Visit the VPN site with a browser the normal way. Since you are most likely using a 64bit OS it won't work, but it does download the required files to $HOME/.juniper_networks
+#* Take note of the title pages for:
+#** the site where you enter your credentials.
+#** the site after you are logged in.
+# You can now logout of the VPN site
+# Make the binary that we will use to automate the login
+#* _rake makebin_
+# Create the config file using the title pages you took note of in step 1. There is a config.yml.example you can look at if you want to hand create this file.
+#* _rake makeconfig_
+# Done :D
+
 
 h2. Config File
 
